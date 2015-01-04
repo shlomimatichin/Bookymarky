@@ -31,7 +31,7 @@ TEMPLATE = r"""
             function render( root )
             {
                 if ( root.type == "folder" ) {
-                    var result = "<ul>" + root.name + "\n";
+                    var result = "" + root.name + "<ul>\n";
                     for ( var i in root.children )
                         result += "<li>" + render( root.children[ i ] ) + "</li>\n";
                     return result + "</ul>";
